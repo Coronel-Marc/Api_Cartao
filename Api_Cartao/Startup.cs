@@ -27,7 +27,7 @@ namespace Api_Cartao
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<AppDbContext>(optionns =>
-                optionns.UseSqlServer(Configuration.GetConnectionString("localhost:5000")));
+                optionns.UseSqlServer(Configuration.GetConnectionString("DefaulConnection")));
 
             services.AddCors(options =>
             {
